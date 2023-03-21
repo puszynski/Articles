@@ -37,8 +37,8 @@ class Foo
 //alternativle, Create method can have more variants with good naming
 class Koo
 {
-    private Koo() { }
-    public static Koo CreateForMetricSystem() => new Koo();
-    public static Koo CreateForImperialSystem() => new Koo(); //and changeind something here.. 
+    private Koo(bool isMetric) { /*do sth with arg*/ }
+    public static Koo CreateForMetricSystem() => new Koo(true);
+    public static Koo CreateForImperialSystem() => new Koo(false); //and changeind something here.. 
 
 }

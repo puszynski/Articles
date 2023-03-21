@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exceptions", "Exceptions", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppCustomException", "ConsoleAppCustomException\ConsoleAppCustomException.csproj", "{87EA597E-BD7B-43B5-AE4A-CBB14B56EE34}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListTypes", "ListTypes\ListTypes.csproj", "{A9CB72A8-F7C5-458B-B83D-07A8BC9431FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{87EA597E-BD7B-43B5-AE4A-CBB14B56EE34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87EA597E-BD7B-43B5-AE4A-CBB14B56EE34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87EA597E-BD7B-43B5-AE4A-CBB14B56EE34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9CB72A8-F7C5-458B-B83D-07A8BC9431FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9CB72A8-F7C5-458B-B83D-07A8BC9431FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9CB72A8-F7C5-458B-B83D-07A8BC9431FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9CB72A8-F7C5-458B-B83D-07A8BC9431FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
