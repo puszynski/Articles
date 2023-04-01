@@ -2,18 +2,13 @@
 
 namespace FactoryMethodPattern.LifeExapmle
 {
-    // level 0
-    public class StaticPseudoFactory
+    public class OrmRepositoryFactory
     {
-        private StaticPseudoFactory() { }
-        public static StaticPseudoFactory FactoryMethod() => new StaticPseudoFactory();
-    }
+        public OrmRepositoryFactory()
+        {
+        }
 
-
-    // normal use
-    public class StaticFactoryCreator
-    {
-        public static IUserRepository FactoryMethod(string config)
+        public IUserRepository FactoryMethod(string config)
         {
             switch (config)
             {

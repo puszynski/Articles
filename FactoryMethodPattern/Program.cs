@@ -16,13 +16,18 @@ IUserRepository userRepository = repositoryCreator.FactoryMethod();
 var users = userRepository.GetAll();
 
 
+//CLASSIC CONCEPT & ORM EXAMPLE + CONF INSIDE METHOD
+var ormConfig2 = "DAPPER";
+var factory = new OrmRepositoryFactory();
 
+var userRepository3 = factory.FactoryMethod(ormConfig2);
+var users3 = userRepository3.GetAll();
 
 
 //SIMPLIFY(?) CONCEPT & ORM EXAMPLE - or "STATIC FACTORY METHOD PATTERN"  **NOTE F.M. IS NOT SAME AS S.F.M.
 https://stackoverflow.com/questions/929021/what-are-static-factory-methods
-var ormConfig2 = "EF";
-IUserRepository userRepository2 = StaticCreator.FactoryMethod(ormConfig2);  
+var ormConfig3 = "EF";
+IUserRepository userRepository2 = StaticFactoryCreator.FactoryMethod(ormConfig2);  
 var users2 = userRepository2.GetAll();
 
 
