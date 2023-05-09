@@ -1,7 +1,4 @@
-﻿
-using System.Linq;
-
-int numOne = 100;
+﻿int numOne = 100;
 double numOneDouble = numOne; //IMPLICIT
 
 
