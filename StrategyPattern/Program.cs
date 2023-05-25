@@ -4,8 +4,9 @@ Console.WriteLine("Hello, World!");
 var products = new List<Product> { new Product { Name = "A", Popularity = 10, Price = 20.00m }, new Product { Name = "B", Popularity = 5, Price = 50.00m } };
 
 var context = new SortingContext();
+var popularitySortingStrategy = new PopularitySortingStrategy();
 
-context.SetSortingStrategy(new PopularitySortingStrategy());
+context.SetSortingStrategy(popularitySortingStrategy);
 var productsSortedByPopularity = context.ExecuteStrategy(products);
 
 context.SetSortingStrategy(new PriceSortingStrategy());
